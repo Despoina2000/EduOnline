@@ -1,0 +1,25 @@
+h1{
+    font-style: italic;
+}
+
+h2{
+    font-size: larger;
+}
+
+/* div{ but we use the id of the div instead */
+/* #box{ if we wanted for one box with this id */
+.box{ /* for every div with the same class, box */
+    width: 120px;
+    height: 100px;
+    background: lightpink;
+    margin: 10px; /* space outside the box, with the other elements */
+    padding: 10px; /* space inside the box (and the letters) */
+    border: 2px solid black;
+    float: left; /* if we want our boxes horizontally aligned floating to the left */
+
+    /* for fixed position: 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    */
+}
