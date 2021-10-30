@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduOnline</title>
 
-        <title>
-            My first page
-        </title>
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./style.css">
-    </head>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section -->
+    
+    <header>
+    
+        <div id="menu" class="fas fa-bars"></div>  <!-- Bars για menu -->
+    
+        <a href="#" class="logo"><i class="fas fa-user-graduate"></i>LOGO</a> <!-- Το logo της ιστοσελίδας -->
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="subjects.html">subjects</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    
+        <div id="login" class="fas fa-user-circle"></div> <!-- Icon για login χρήστη -->
+    
+    </header>
+    
+    
+    
+    <!-- login form, θα συμπληρωθεί σε επόμενη άσκηση -->
+    
+    <div class="login-form">
+    
+    </div>
 
 
-    <body>
-        <h1> Hello World. </h1>
-        <h2 style="color: lightpink;"> Get to know me. </h2>
-        <ul style="color: lightpink;">
-            <li> Angry </li>
-            <li> Kinda cute </li>
-            <li> Coolest person in the room </li>
-            <li> Coding makes me feel goodSS</li>
-        </ul>
-        
-        <p> This is just a cool picture I found: </p>
-        <img src="https://i.pinimg.com/564x/36/79/49/367949089ece843d84ba376f7364514e.jpg">
-        <br>
-        <a href="https://www.instagram.com/elfie.jpg/"> My instagram </a>
-        <br>
-        <br>
+    <!-- About us -->
 
-        <div class="box">
-            Yo I just created a pink box. To bottle up my feelings in here! Sheesh!
-            <!-- This is inside div element (you can wrap anything in here) -->
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="images/about-img.svg" alt="">
         </div>
-        <div class="box">
-            another one. Feelings getting out of hand...
+    
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam quaerat dolor voluptas nobis voluptates illum? Inventore voluptas dolore voluptates.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex delectus ducimus dignissimos pariatur. Amet sed distinctio earum dolorum nulla, in obcaecati aliquid modi quos magni ducimus culpa nobis laudantium incidunt.</p>
+            <a href="#"><button class="btn">learn more</button></a>
         </div>
+    
+    </section>
 
-        <!-- This is js example, in our html code:
-         <script> 
-            console.log('Hi! Are you sure you wanna view my page?'); 
-        </script> -->
-
-        <script src="./script.js"> 
-
-        </script>
-
-        <br>
-        <form action="index.html" method="get">
-            <input type="text" name="name" placeholder="Your name">
-            <button type="submit">Sumbit</button>
-            <!-- we can use this data when we learn backened programming language, and manipulate
-            the data --> 
-            
-        </form>
-
-    </body>
+</body>
 </html>
