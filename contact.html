@@ -47,16 +47,37 @@
         <h1>Επικοινωνία</h1>
         <p>Εάν έχετε προτάσεις, απορίες, ή χρειάζεστε διευκρίνιση για οτιδήποτε, μη διστάσετε να μας στείλετε μήνυμα. Θα χαρούμε να σας βοηθήσουμε.</p>
 
-          <label>Όνομα</label>
-           <input class="" type="text" name="Name" required>
+            <label>Όνομα</label>
+            <input class="" type="text" name="Name" required> <br>
           
+            <p>Φύλο</p>
+            <form> 
+                  <input type="radio" id="gender" name="gender" value="gender">
+                  <label for="html">Άνδρας</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">Γυναίκα</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">Άλλο</label>
+            </form>  <br>
+
+            <label>Ηλικία</label>
+            <input class="" type="number" name="number" required> <br><br>
 
             <label>Email</label>
-            <input class="" type="text" name="Email" required>
+            <input class="" type="email" name="Email" required> <br><br>
+
+
+            <label for="reason">Σκοπός μηνύματος</label>
+            <select name="reason" id="reason" form="reasonform">
+                <option value="suggestions">Προτάσεις</option>
+                <option value="questions">Απορίες</option>
+                <option value="comments">Σχόλια</option>
+                <option value="issues">Παρουσιάστηκε πρόβλημα</option>
+            </select> <br><br>
           
 
             <label>Μήνυμα</label>
-            <input class="" type="text" name="Message" required>
+            <input class="" type="text" name="Message" required> 
 
             <button type="submit" class="">Αποστολή</button>
 
