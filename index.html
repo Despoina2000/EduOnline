@@ -1,9 +1,19 @@
+<!-- ΕΡΓΑΣΙΑ ΙΣΤΟΣ // ΑΣΚΗΣΗ 1 // ΕΛΙΣΑΒΕΤ ΝΤΟΚΟΛΑ 3180269 // ΔΕΣΠΟΙΝΑ ΠΑΠΑΔΟΠΟΥΛΟΥ 3180146 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduOnline</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
 
     <!-- custom css file link -->
@@ -17,8 +27,8 @@
     <!-- header section -->
     
     <header>
-    
-        <table>
+
+        <table class="logo">
             <th>
                  <img width=50px src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/452/external-education-education-icongeek26-linear-colour-icongeek26-1.png">
             </th>
@@ -44,16 +54,22 @@
 
 <!-- Home section -->
 
-<section>
+<section class="home" id="home">
 
-    <h1>Η σωστή παιδεία είναι η αρχή της ιδανικής σου ζωής</h1>
-    <h3>Σε συνεργασία με καθηγητές και αποφοίτους των Πανεπιστημίων...</h3>
-    <img src="https://acein.aueb.gr/wp-content/uploads/2020/11/AUEB-EN_transparent2-1.png" style="width:20%" alt=AUEB>
-    <img src="http://www.interreg-balkanmed.eu/gallery/Images/Partners%20logos/Aristotle-University-of-Thessaloniki.png" style="width:20%" alt=AUTH>
-    <img src="https://www.erasmus.gr/UsersFiles/microsite1193/Images/UOA.jpg" style="width:25%" alt=UOA>
+    <h1>Η σωστή παιδεία είναι η αρχή <br> της ιδανικής σου ζωής</h1>
+    <h1> <img width=100px src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/452/external-education-education-icongeek26-linear-colour-icongeek26-1.png"> <br> EduOnline</h1>
     <p>Ελπίζουμε να κάθεστε άνετα, και να είστε έτοιμοι για μάθηση. Όπου και να βρίσκεστε, οποιαδήποτε στιγμή, μπορείτε να απορροφήσετε τις γνώσεις που επιζητάτε.</p>
-    <p>Ακόμα και από το σπίτι, μπορείτε να αποκτήσετε πιστοποίηση για οποιοδήποτε τομέα ενδιαφέρεστε. Τι περιμένετε;</p>
-    <a href="subjects.html"><button class="btn">Δείτε τα μαθήματα</button></a>
+    <p>Ακόμα και από το σπίτι, μπορείτε να αποκτήσετε πιστοποίηση για οποιοδήποτε τομέα ενδιαφέρεστε.</p>
+    
+    <section class="uni">
+    <p>Σε συνεργασία με καθηγητές και αποφοίτους των Πανεπιστημίων...</p>
+    <img src="https://acein.aueb.gr/wp-content/uploads/2020/11/AUEB-EN_transparent2-1.png" style="width:30%" alt=AUEB>
+    <img src="http://www.interreg-balkanmed.eu/gallery/Images/Partners%20logos/Aristotle-University-of-Thessaloniki.png" style="width:30%" alt=AUTH>
+    <img src="https://www.erasmus.gr/UsersFiles/microsite1193/Images/UOA.jpg" style="width:37%" alt=UOA>
+    </section>
+
+
+
 
 </section>
 
@@ -62,25 +78,24 @@
 
 
 <footer>
-    
-<table>
 
-<tr>
-    <th> 
-        <img width=250px src="https://cdn.quotesgram.com/img/78/92/450500173-ironic-twist.png">
-        <h3>Τοποθεσίες Επιχείρησης</h3>
-        <p>Ελλάδα <br> Ηνωμένο Βασίλειο <br> Γερμανία</p>
+<div class="box-container">
 
-    </th>
+<div class="box">
+    <h3> Τοποθεσίες Επιχείρησης </h3>
+    <p> Ελλάδα </p>
+    <p> Ηνωμένο Βασίλειο 
+    <p>Γερμανία </p>
+</div>
 
-    <th>
-        <img width=250px src="https://cdn.quotesgram.com/img/78/92/450500173-ironic-twist.png">
-        <h3>Στοιχεία Επικοινωνίας</h3>
-        <p>Αθηνάς 32, 35144, Αθήνα, Ελλάδα <br> EduOnline@gmail.gr <br> 2103543000</p>
-    </th>
+<div class="box">
+    <h3> Στοιχεία Επικοινωνίας </h3>
+    <p> <i class="fas fa-map-marker-alt"></i> Αθηνάς 32, 35144, Αθήνα, Ελλάδα </p>
+    <p> <i class="fas fa-envelope"></i> EduOnline@gmail.gr </p>  
+    <p> <i class="fas fa-phone"></i> 2103543000 </p>
+</div>
 
-</tr>
-</table>
+</div>
 
 </footer>
 
