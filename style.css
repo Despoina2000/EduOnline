@@ -1,25 +1,157 @@
-h1{
-    font-style: italic;
+:root{
+    --gradient:linear-gradient(90deg, lightblue, grey);
 }
 
-h2{
-    font-size: larger;
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    border:none; outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
-/* div{ but we use the id of the div instead */
-/* #box{ if we wanted for one box with this id */
-.box{ /* for every div with the same class, box */
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    margin: 10px; /* space outside the box, with the other elements */
-    padding: 10px; /* space inside the box (and the letters) */
-    border: 2px solid black;
-    float: left; /* if we want our boxes horizontally aligned floating to the left */
+*::selection{
+    background:lightblue;
+    color:#fff;
+}
 
-    /* for fixed position: 
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    */
+html {
+    font-size: 70%;
+    
+}
+
+
+section {
+    min-height: 100vh;
+    padding:1rem 7%;
+    padding-top:6rem;
+}
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.5rem 7%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header .logo {
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+/* Το πλαίσιο του μενού */
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color:#fff;
+}
+
+
+body {
+    padding-top: 50px;
+}
+
+
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.textbox{
+    
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text] :focus {
+  background-color: lightblue;
+}
+
+.form_style{
+   
+  background-color: #f2f2f2;
+ 
+}
+
+
+.home, .subjects, .programming, .economics, .sciences, .about, .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 6rem;
+    color:#666;
+}
+
+.home p{
+    font-size: 2.5rem;
+    color:#999;
+    padding:1rem 0;
+    width:80rem;
+}
+
+.uni { display: inline-block; }
+
+
+.subjects .box, .programming .box, .economics .box, .sciences .box{
+    display: inline-block;
+    width: 30rem;
+}
+
+
+.subjects .box-container .box, .programming .box-container .box, .economics .box-container .box, .sciences .box-container .box{
+    display: inline-block;
+
+}
+
+.subjects .box-container .box, .programming .box-container .box, .economics .box-container .box, .sciences .box-container .box{
+    padding: 50px;
+    width:35rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    position: relative;
+    margin:1.5rem;  
+} 
+
+.programming .box-container .box, .economics .box-container .box, .sciences .box-container .box {
+    padding:1rem;
+}
+
+
+
+.subjects .box-container .box, .programming .box-container .box, .economics .box-container .box, .sciences .box-container .box  p{
+    padding:1rem 0;
+    color:#666;
+    font-size: 1.5rem;
 }
