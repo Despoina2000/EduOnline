@@ -21,7 +21,7 @@ html {
     
 }
 
-
+/* Όλα τα section θα έχουν τα εξής */
 section {
     min-height: 100vh;
     padding:1rem 7%;
@@ -29,7 +29,7 @@ section {
 }
 
 
-
+/* Για το header (το μενού πάνω πάνω) */
 header{
     width: 100%;
     display: flex;
@@ -72,6 +72,11 @@ body {
 }
 
 
+/* Να είναι οι φωτογραφίες μας στρογγυλές*/
+.about img {
+    border-radius: 50%;
+}
+
 
 ul.no-bullets {
   list-style-type: none;
@@ -80,15 +85,6 @@ ul.no-bullets {
 }
 
 
-.textbox{
-    
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 input[type=text] :focus {
   background-color: lightblue;
@@ -100,22 +96,29 @@ input[type=text] :focus {
  
 }
 
+/* Θέλω όλα να είναι κεντραρισμένα, αποκλείωντας τα περιεχόνμενα των about, contact */
+/* Όμως θέλω οι τίτλοι (about, contact) να είναι κεντραρισμένοι */
 
-.home, .subjects, .programming, .economics, .sciences, .about, .contact {
+.home, .subjects, .programming, .economics, .sciences, .about h1, .contact h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     position: relative;
     text-align: center;
-}
+} 
 
 .home h1{
     font-size: 6rem;
     color:#666;
 }
 
-.home p{
+.subjects, .programming, .economics, .sciences, .contact, .about {
+    font-size: 3rem;
+    color:#666;
+}
+
+.home p, .about p, .contact p {
     font-size: 2.5rem;
     color:#999;
     padding:1rem 0;
@@ -196,4 +199,3 @@ footer .box-container .box p{
     padding:.5rem 0;
     color:#eee;
 }
-
