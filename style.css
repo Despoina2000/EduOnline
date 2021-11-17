@@ -155,3 +155,45 @@ input[type=text] :focus {
     color:#666;
     font-size: 1.5rem;
 }
+
+
+footer{
+    background:#333;
+}
+
+footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .box-container .box{
+    margin:1.5rem;
+    text-align: center;
+    flex:1 1 25rem;
+}
+
+footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+    padding:1rem 0;
+}
+
+footer .box-container .box p{
+    font-size: 1.7rem;
+    color:#eee;
+    padding:.7rem 0;
+}
+
+footer .box-container .box p i{
+    padding-right: .5rem;
+    color:lightblue;
+}
+
+footer .box-container .box p{
+    font-size: 1.8rem;
+    display: block;
+    padding:.5rem 0;
+    color:#eee;
+}
+
