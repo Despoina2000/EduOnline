@@ -1,8 +1,40 @@
-/* We can output content to the console, it will help us debug our app */ 
-console.log('I am coding in JavaScript!') 
+$(document).ready(function(){
 
-var number = 10;
-var string = 'Hello there';
-var isPage = true;
+    $('#menu').click(function(){
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
+    });
 
-document.getElementById('box').innerHTML = STRING; /* the element after '=' gets added to div */
+    $('#login').click(function(){
+        $('.login-form').addClass('popup');
+    });
+
+    $('.login-form form .fa-times').click(function(){
+        $('.login-form').removeClass('popup');
+    });
+
+    $(window).on('load scroll',function(){
+
+        $('#menu').removeClass('fa-times');
+        $('.navbar').removeClass('nav-toggle');
+
+        $('.login-form').removeClass('popup');
+
+        $('section').each(function(){
+
+            let top = $(window).scrollTop();
+            let height = $(this).height();
+            let id = $(this).attr('id');
+            let offset = $(this).offset().top - 200;
+
+            if(top > offset && top < offset + height){
+                $('.navbar ul li a').removeClass('active');
+                $('.navbar').find(`[href="#${id}"]`).addClass('active');
+            }
+
+
+        });
+
+    });
+
+}); 
