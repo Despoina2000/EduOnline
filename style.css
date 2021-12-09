@@ -170,12 +170,12 @@ header #menu{
     color:lightblue;
 }
 
-.login-form form .btn{
+.btn{
     width: 100%;
     margin:2rem 0;
 }
 
-.login-form form .btn:hover{
+.btn:hover{
     background:#444;
 }
 
