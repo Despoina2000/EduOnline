@@ -248,25 +248,32 @@ input[type=text] :focus {
 .subjects .box, .subject .box{
     display: inline-block;
     width: 30rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    margin:1.5rem;
+    padding: 50px;
+    width:35rem;
 }
 
 
 .subjects .box-container .box, .subject .box-container .box{
     display: inline-block;
-
-}
-
-.subjects .box-container .box, .subject .box-container .box{
     padding: 50px;
     width:35rem;
-    border:.1rem solid rgba(0,0,0,.3);
+    
     position: relative;
-    margin:1.5rem;  
-} 
+    margin:1.5rem; 
+   
+
+}
+.subject .box-container{
+    justify-content:center;
+    align-items: stretch;
+}
 
 .subject .box-container .box {
     padding:1rem;
 }
+
 
 .subject .box-container .box img{
     width: 200px;
@@ -324,3 +331,4 @@ footer .box-container .box p{
 @media screen and (max-width: 600px) {
     
     }
+
