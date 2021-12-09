@@ -54,13 +54,11 @@ header .logo img{
 
 /* Το πλαίσιο του μενού */
 
-label{
-    margin: 0 40px 0 0;
-    width: 26px;
-    float:right;
-    font-size: 26px;
-    color: blue;
-    display: none;
+#menu{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none; 
 }
 
 header .navbar ul{
@@ -362,7 +360,7 @@ footer .box-container .box p{
         padding: 2rem 0;
     }
 
-    label{
+    #menu{
         display: block;
         cursor: pointer;
     }
@@ -380,7 +378,13 @@ footer .box-container .box p{
     header .navbar ul li a.active, header .navbar ul li a:hover{
         color: blue;
     }
-   
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle{
+        top:6.4rem;
+    }
 
 
 }
