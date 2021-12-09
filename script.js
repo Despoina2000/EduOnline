@@ -1,3 +1,4 @@
+/* functions για το login form */
 $(document).ready(function(){
     $('#menu').click(function(){
         $(this).toggleClass('fa-times');
