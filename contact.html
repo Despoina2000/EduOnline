@@ -20,6 +20,152 @@
 
 
 <body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduOnline</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- header section -->
+    
+    <header>
+
+        <table class="logo">
+            <th>
+                 <img  src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/452/external-education-education-icongeek26-linear-colour-icongeek26-1.png">
+            </th>
+            <th>
+                <h1>EduOnline</h1>
+            </th>
+        </table>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="subjects.html">Κατηγορίες</a></li>
+                <li><a href="about.html">Ποιοί είμαστε</a></li>
+                <li><a class='active' href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+        
+        <div id="login" class="fas fa-user-circle"></div>
+
+    
+    </header>
+    
+    <!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+
+
+    <!-- Contact section -->
+
+<section class="contact" id="contact">
+
+    <div class="row">
+
+        <h1>Επικοινωνία</h1>
+        <p>Εάν έχετε προτάσεις, απορίες, ή χρειάζεστε διευκρίνιση για οτιδήποτε, μη διστάσετε να μας στείλετε μήνυμα. Θα χαρούμε να σας βοηθήσουμε.</p>
+        <section class="form_style">
+            <label>Όνομα</label>
+            <input class="textbox" type="text" name="Name" required> <br>
+          
+            <p>Φύλο</p>
+            <form> 
+                  <input type="radio" id="gender" name="gender" value="gender">
+                  <label for="html">Άνδρας</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">Γυναίκα</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">Άλλο</label>
+            </form>  <br>
+
+            <label>Ηλικία</label>
+            <input class="textbox" type="number" name="number" required> <br><br>
+
+            <label>Email</label>
+            <input class="textbox" type="email" name="Email" required> <br><br>
+
+
+            <label for="reason">Σκοπός μηνύματος</label>
+            <select name="reason" id="reason" form="reasonform">
+                <option value="suggestions">Προτάσεις</option>
+                <option value="questions">Απορίες</option>
+                <option value="comments">Σχόλια</option>
+                <option value="issues">Παρουσιάστηκε πρόβλημα</option>
+            </select> <br><br>
+          
+            <textarea name="comment" form="usrform">Γράψτε το μήνυμα εδώ...</textarea>
+            </section>
+
+            <button type="submit" class="">Αποστολή</button>
+
+    </div>
+      
+    
+</section>
+
+    
+<!-- footer section starts  -->
+
+
+<footer>
+
+    <div class="box-container">
+    
+    <div class="box">
+        <h3> Τοποθεσίες Επιχείρησης </h3>
+        <p> Ελλάδα </p>
+        <p> Ηνωμένο Βασίλειο 
+        <p>Γερμανία </p>
+    </div>
+    
+    <div class="box">
+        <h3> Στοιχεία Επικοινωνίας </h3>
+        <p> <i class="fas fa-map-marker-alt"></i> Αθηνάς 32, 35144, Αθήνα, Ελλάδα </p>
+        <p> <i class="fas fa-envelope"></i> EduOnline@gmail.gr </p>  
+        <p> <i class="fas fa-phone"></i> 2103543000 </p>
+    </div>
+    
+    </div>
+    
+</footer>
+    
+<!-- footer section ends -->
+
+
+</body>
+</html>
 
     <!-- header section -->
     
