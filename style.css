@@ -386,6 +386,17 @@ footer .box-container .box p{
         top:6.4rem;
     }
 
+    .home h1{
+        font-size: 4rem;
+    }
+
+    .home p{
+        width: auto;
+    }
+
+    .subject *, .subjects *{
+        width:auto;
+    }
 
 }
 
