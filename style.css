@@ -62,9 +62,7 @@ label{
     color: blue;
     display: none;
 }
-#toggle{
-    display: none;
-}
+
 header .navbar ul{
     display: flex;
     align-items: center;
@@ -223,7 +221,7 @@ input[type=text] :focus {
 /* Θέλω όλα να είναι κεντραρισμένα, αποκλείωντας τα περιεχόνμενα των about, contact */
 /* Όμως θέλω οι τίτλοι (about, contact) να είναι κεντραρισμένοι */
 
-.home, .subjects, .programming, .economics, .sciences, .about h1, .contact h1 {
+.home, .subjects, .programming, .economics, .sciences, .about h4, .about h1, .contact h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,6 +230,8 @@ input[type=text] :focus {
     text-align: center;
    
 } 
+
+
 
 .home h1{
     font-size: 6rem;
@@ -342,29 +342,45 @@ footer .box-container .box p{
         flex-direction: column;
        
     }
-    .navbar{
-        text-align: right;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+
+    html {
+        font-size: 55%;
+        
+    }
+
+   header .navbar{
+       position: fixed;
+       top: -120%;
+       left: 0;
+       width:100%;
+       background-color: aqua;
        
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
     }
 
     label{
         display: block;
         cursor: pointer;
     }
-    header .navbar ul li a{
-        
-        --gradient:linear-gradient(90deg, lightblue, grey);
-        margin: 0;
-
+    header .navbar ul li {
+      margin: 1.5rem 0;
+      text-align: center;
+      width:100%;
     }
 
-    #toggle:checked + .navbar{
-
+    header .navbar ul li a{
+        font-size: 2.5rem;
         display: block;
     }
+
+    header .navbar ul li a.active, header .navbar ul li a:hover{
+        color: blue;
+    }
+   
 
 
 }
