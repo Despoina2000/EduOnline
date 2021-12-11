@@ -170,12 +170,12 @@ header #menu{
     color:lightblue;
 }
 
-.login-form form .btn{
+.btn{
     width: 100%;
     margin:2rem 0;
 }
 
-.login-form form .btn:hover{
+.btn:hover{
     background:#444;
 }
 
@@ -236,7 +236,7 @@ input[type=text] :focus {
     color:#666;
 }
 
-.subjects, .programming, .economics, .sciences, .contact, .about {
+.subjects, .programming, .economics, .sciences, .contact, .about, .register {
     font-size: 3rem;
     color:#666;
 }
