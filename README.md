@@ -1,7 +1,7 @@
 # EduOnline
 *Welcome to EduOnline!*
 <br><img src="https://github.com/Despoina2000/EduOnline/blob/main/code/image/LogoSample_Bigger.jpg" >
-<p>Our vision is the creation of an online platform where stundents can register and attend lectures.</p>
+<p>Our vision is the creation of an online platform where students can register and attend lectures.</p>
 
 ## Main site
 <img src="https://github.com/Despoina2000/EduOnline/blob/main/screenshots/index.png" >
