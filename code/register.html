@@ -1,0 +1,124 @@
+<!-- ΕΡΓΑΣΙΑ ΙΣΤΟΣ // ΑΣΚΗΣΗ 1 // ΕΛΙΣΑΒΕΤ ΝΤΟΚΟΛΑ 3180269 // ΔΕΣΠΟΙΝΑ ΠΑΠΑΔΟΠΟΥΛΟΥ 3180146 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/452/external-education-education-icongeek26-linear-colour-icongeek26-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduOnline</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <!-- header section -->
+    
+    <header>
+
+        <table class="logo">
+            <th>
+                 <img width=50px src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/452/external-education-education-icongeek26-linear-colour-icongeek26-1.png">
+            </th>
+            <th>
+                <h1>EduOnline</h1>
+            </th>
+        </table>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class='active' href="index.html">Αρχική</a></li>
+                <li><a href="subjects.html">Κατηγορίες</a></li>
+                <li><a href="about.html">Ποιοί είμαστε</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+        
+        <div id="login" class="fas fa-user-circle"></div>
+    
+    </header>
+    
+
+<!-- login form  -->
+
+<div class="login-form" id='login'>
+
+    <form action="">
+        <h3>Σύνδεση</h3>
+        <input type="email" placeholder="username" class="box" required/>
+        <input type="password" placeholder="password" class="box" required/>
+        <p>Ξεχάσατε τον κωδικό σας; <a href="#">Πατήστε εδώ</a></p>
+        <p>Δεν έχτε λογαριασμό; <a href="register.html">Εγγραφείτε τώρα</a></p>
+        <input type="submit" class="btn" value="Σύνδεση"/>
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+    
+<section>
+<!-- register form  -->
+
+<div class="register" id='register'>
+
+    <form action="">
+        <h3>Εγγραφή</h3>
+        <input type="email" placeholder="username" class="box" required/>
+        <input type="password" placeholder="password" class="box" required/>
+        <input type="submit" class="btn" value="Εγγραφή"/>
+        
+    </form>
+
+</div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+
+<footer>
+
+    <div class="box-container">
+    
+    <div class="box">
+        <h3> Τοποθεσίες Επιχείρησης </h3>
+        <p> Ελλάδα </p>
+        <p> Ηνωμένο Βασίλειο 
+        <p>Γερμανία </p>
+    </div>
+    
+    <div class="box">
+        <h3> Στοιχεία Επικοινωνίας </h3>
+        <p> <i class="fas fa-map-marker-alt"></i> Αθηνάς 32, 35144, Αθήνα, Ελλάδα </p>
+        <p> <i class="fas fa-envelope"></i> EduOnline@gmail.gr </p>  
+        <p> <i class="fas fa-phone"></i> 2103543000 </p>
+    </div>
+    
+    </div>
+    
+    </footer>
+    
+    <!-- footer section ends -->
+
+</body>
+</html>
